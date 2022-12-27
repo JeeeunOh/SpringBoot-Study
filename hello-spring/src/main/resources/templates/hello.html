@@ -1,0 +1,13 @@
+<!-- resources/templates/hello-template.html -->
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!-- data는 controller에서 선언해준 model의 key값 -->
+<p th:text="'hello. ' + ${data}" >안녕하세요. 손님</p>
+</body>
+</html>
